@@ -6,5 +6,7 @@
 		@for(st <- snippetTypes) {
 			<li><a href="@action(controllers.Application.showByTypeId(st.id))">@st.title</a></li>
 		}
+		<li><a href="@action(controllers.Application.randomSnippet)">Random Snippet</a></li>
+		
 	</ul>
 </div>

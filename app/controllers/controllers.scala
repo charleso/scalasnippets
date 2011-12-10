@@ -27,11 +27,16 @@ object Application extends Controller {
     Snippet.all
   }
 
-  
   def showByTypeId(typeId: Pk[Long]) = {
     val snippets = Snippet.findByTypeId(typeId)
     html.byType(snippets)
-    
-}
+
+  }
+  
+  def randomSnippet = {
+    val snippet = Snippet.random
+    println(snippet)
+    html.byType(snippet)
+  }
 
 }

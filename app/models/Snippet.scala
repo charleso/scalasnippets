@@ -25,4 +25,8 @@ object Snippet extends Magic[Snippet] {
   def findByTypeId(typeId: Pk[Long]) = {
     Snippet.find("typeId = " + typeId).on("typeId" -> typeId).as(Snippet *)
   }
+  
+  def random = {
+    SQL("select * from Snippet s order by rand() LIMIT 1").as(Snippet *)
+  }
 }
