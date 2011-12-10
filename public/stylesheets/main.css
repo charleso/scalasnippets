@@ -1,3 +1,11 @@
+body {
+	background : #2E4A6B;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	color: #444444;
+}
+
 #container {
 	width:960px;
 	margin-right: auto;
@@ -6,9 +14,27 @@
 	height: 100%;
 }
 
-body {
-	background : #2E4A6B;
-	margin: 0;
-	padding: 0;
+#main {
+	padding: 20px;
+
 }
+
+#header {
+	padding: 20px;
+	color: #666666;
+}
+
+#headerright {
+	float:right;
+	
+}
+
+#footer {
+	padding: 20px;
+}
+
+a:link {text-decoration:none; color: #666666;}
+a:visited {text-decoration:none; color: #666666;}
+a:hover {text-decoration:underline; color: #666666;}
+a:active {text-decoration:underline; color: #666666;}
 
