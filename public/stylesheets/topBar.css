@@ -1,0 +1,9 @@
+#body {
+	background-color:red;
+}
+
+#navlist li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
