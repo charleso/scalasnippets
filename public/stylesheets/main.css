@@ -2,4 +2,13 @@
 	width:960px;
 	margin-right: auto;
 	margin-left: auto;
+	background: #FFFFFF;
+	height: 100%;
 }
+
+body {
+	background : #2E4A6B;
+	margin: 0;
+	padding: 0;
+}
+
