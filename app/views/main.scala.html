@@ -1,10 +1,12 @@
 @(title:String)(content: => Html)
+<link rel="stylesheet" media="screen" href="@asset("public/stylesheets/main.css")">        
 <!DOCTYPE html>
 <html>
     <head>
         <title>@title</title>
     </head>
     <body>
+    <div id="container">
     	@controllers.Application.topBar()
 	    <div id="main">
 	    	@content
@@ -12,6 +14,7 @@
 
 		<div id="footer">
 		   stuff in footer
+		</div>
 		</div>
 	</body>
 </html>

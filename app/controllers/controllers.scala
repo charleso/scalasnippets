@@ -35,7 +35,6 @@ object Application extends Controller {
   
   def randomSnippet = {
     val snippet = Snippet.random
-    println(snippet)
     html.byType(snippet)
   }
 
