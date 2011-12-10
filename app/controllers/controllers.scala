@@ -24,8 +24,7 @@ object Application extends Controller {
   }
 
   def viewAllSnippets() = {
-    val s = Snippet.all
-    s
+    Snippet.all
   }
 
   
