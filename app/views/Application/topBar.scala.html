@@ -1,0 +1,10 @@
+@(snippetTypes: List[models.SnippetType])
+<link rel="stylesheet" media="screen" href="@asset("public/stylesheets/topBar.css")">        
+
+<div id="navcontainer">
+	<ul id="navlist">
+		@for(st <- snippetTypes) {
+			<li><a href="@action(controllers.Application.showByTypeId(st.id))">@st.title</a></li>
+		}
+	</ul>
+</div>

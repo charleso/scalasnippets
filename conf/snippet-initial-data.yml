@@ -1,0 +1,29 @@
+- !!models.Snippet
+    id:             !!Id[Long] 1
+    title:          'Sum a list of numbers'
+    desc:           'Sum a list of numbers using reduceLeft'
+    code:           '(1 to 10) reduceLeft( _ + _ )'
+    result:         '55'
+    accepted:       true
+    views:          33
+    typeId:         1
+    
+- !!models.Snippet
+    id:             !!Id[Long] 2
+    title:          'Multiply items in a list'
+    desc:           'Multiply each item in a list by 2'
+    code:           '(1 to 10) map { _ * 2 }'
+    result:         '[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]'
+    accepted:       true
+    views:          32
+    typeId:         1
+    
+- !!models.Snippet
+    id:             !!Id[Long] 3
+    title:          'Read in a file'
+    desc:           'Create a string from contents of a file'
+    code:           'io.Source.fromFile("data.txt").mkString'
+    result:         'contents of file'
+    accepted:       true
+    views:          31
+    typeId:         4

@@ -1,0 +1,17 @@
+@(title:String)(content: => Html)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+    </head>
+    <body>
+    	@controllers.Application.topBar()
+	    <div id="main">
+	    	@content
+		</div>
+
+		<div id="footer">
+		   stuff in footer
+		</div>
+	</body>
+</html>

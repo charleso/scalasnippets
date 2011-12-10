@@ -1,0 +1,19 @@
+- !!models.SnippetType
+    id:             !!Id[Long] 1
+    title:          Lists
+    desc:           Basic collection examples
+    
+- !!models.SnippetType
+    id:             !!Id[Long] 2
+    title:          Database
+    desc:           Database connectivity using monadic examples
+    
+- !!models.SnippetType
+    id:             !!Id[Long] 3
+    title:          Traits
+    desc:           Composing types using mixins and types
+    
+- !!models.SnippetType
+    id:             !!Id[Long] 4
+    title:          Files
+    desc:           Reading in and writing files
