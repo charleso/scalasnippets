@@ -1,0 +1,40 @@
+@()(implicit flash:play.mvc.Scope.Flash, errors:Map[String,play.data.validation.Error])
+
+@if(flash.get("error")) {
+    <p style="color:#c00">
+        @flash.get("error")
+    </p>
+}
+
+@main(title = "Create Snippets") {
+
+    <ul>
+        @errors.map { case (a, b) => <li>@a @b</li>}
+    </ul>
+
+    @form(controllers.Application.create()) {
+        <div>
+            <label for="content">Title: </label>
+            <input id="title" name="title" />
+        </div>
+        <div>
+            <label for="content">Description: </label>
+            <input id="desc" name="desc" />
+        </div>
+        <div>
+            <label for="content">Code: </label>
+            <textarea id="code" name="code"></textarea>
+        </div>
+        <div>
+            <label for="content">Result: </label>
+            <input id="result" name="result" />
+        </div>
+        <div>
+            <input type="submit" value="Create" />
+        </div>
+    }
+
+    <script type="text/javascript">
+         SyntaxHighlighter.all()
+    </script>
+}
